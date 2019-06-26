@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>digonal nav</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <script src="jQuery.min.js"></script>
+    <link rel="stylesheet" type = "text/css" href = "ourteam.css">
+    
+</head>
+<body>
+    <nav class="menu-activea">
+  <h1><img src ="menuicon.png"></h1>
+  <ul>
+    <li><a href ="home.html">HOME</a></li>
+    <li><a href ="#">GALLERY</a></li>
+    <li><a href ="ourteam.html">TEAM</a></li>
+    <li><a href ="#">SERVICES</a></li>
+    <li><a href ="#">ABOUT</a></li>
+   
+  </ul>
+</nav>
+<main>
+  <section>
+   <br><br><br>
+ <div class="wrapper"> 
+        <h1>::OUR CODING TEAM	&#160;	&#160;	::&#160;	&#160;  #CODERS::</h1>
+  <div class="cols">
+    
+    
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(rekhansh.png)">
+						 
+					</div>
+					<div class="back">
+						<div class="inner">
+						  <p><b>Rekhansh Priyadarshi</b><br>
+                            Born Programmer . 7 Years coding experience. 4-Star coder . 
+                            <i>E-mail: priyadarshirekhansh@gmail.com</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(abhishek.jpg);">
+					 </div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Abhishek Sharma</b><br>Enthusiast Programmer.Full Stack Web Developer.Android developer .Machine Learning <br> <i>
+                                E-mail : abhie1909@gmail.com</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(ekta.jpg);">
+						 
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Ekta Garg</b><br>Programmer . Web Developer . Alogrithm Learner <br> <i>E-mail : gargekta1909@gmail.com</i>
+                            
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(ani.jpg)">
+						 
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Anirudh</b><br>
+                                Tension free coder . Web Developer . Code Optimiser
+                                <br><i>E-mail : anirudhganiwal@gmail.com</i>
+                            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(nitika.jpg)">
+						 
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Nitika Gupta</b><br> Fast Coder . Algorithm master,Web Developer<br><i>E-mail : nitikagupta@gmail.com</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(BHARTI.jpg)">
+						  
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p> <b>Bharti Sawaria</b><br>
+                                Enthusiat serious coder. Algorith EXPERT. Hard Worker.
+                                <br>
+                            <i>E-mail : bhartisawaria71@gmail.com </i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(ankita.jpg)">
+					 
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Anikita Sihag</b><br>Fast Coder. Algorithm Expert Web Developer . Machine Learing expert
+                            <i>E-mail : anikitasihag@gmail.com</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="container">
+					<div class="front" style="background-image: url(hanna%20baker.jpg)">
+						 
+					</div>
+					<div class="back">
+						<div class="inner">
+							<p><b>Hanna Baker</b> <br> 13 reasons Why
+                            <br>Crush Forever</p>
+						</div>
+					</div>
+				</div>
+			</div>
+            
+         </div>
+      </div>
+
+     
+  </section>
+</main>
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+</body>
+</html>
